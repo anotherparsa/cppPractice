@@ -1,1 +1,1 @@
-finding the GCD of two numbers.
+finding the GCD of two numbers..
