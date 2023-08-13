@@ -9,7 +9,7 @@ int main(){
     int size = ((sizeof(array)) / sizeof(array[0]));
     cout << binarySearch(54, size, array) << endl;
     cout << binarySearch(456, size, array) << endl;
-    cout << binarySearch(4565, size, array) << endl;
+    cout << binarySearch(456, size, array) << endl;
 
 
 }
