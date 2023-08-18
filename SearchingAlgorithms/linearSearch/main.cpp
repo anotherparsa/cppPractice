@@ -14,16 +14,13 @@ int main(){
 }
 
 int linearSearch( int target, int size, int array[] ){
-    int counter = 0;
     for (int i = 0 ; i < size ; i++){
         if (array[i] == target){
-            return counter;
+            return i;
             break;
         }
-        counter++;
     }
     return -1;
-
 }
 
 
