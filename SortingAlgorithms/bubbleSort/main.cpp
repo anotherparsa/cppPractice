@@ -7,7 +7,7 @@ void swapping (int arr[], int a, int b);
 void showArray(int arr[], int size);
 
 int main(){
-    int arr1[] = {1, 3, 2, 6, 5, 4};
+    int arr1[] = {1, 3, 6, 4, 5, 2};
     int length = sizeof(arr1) / sizeof(int);
     cout << "before doing bubble sort:" << endl;
     showArray(arr1, length);
@@ -17,8 +17,8 @@ int main(){
 }
 
 void bubbleSort(int arr[], int size){
-    bool isUnsorted = true;
     for (int i = 1 ; i <= size ; i++){
+    bool isUnsorted = true;
         if (isUnsorted){
             for (int j = 0 ; j < size -i ; j++){
                 if (arr[j] > arr[j+1]){
