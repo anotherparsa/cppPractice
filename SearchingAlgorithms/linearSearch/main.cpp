@@ -10,14 +10,12 @@ int main(){
     cout << linearSearch(234, size, array) << endl;
     cout << linearSearch(6765, size, array) << endl;
     cout << linearSearch(3424, size, array) << endl;
-
 }
 
 int linearSearch( int target, int size, int array[] ){
     for (int i = 0 ; i < size ; i++){
         if (array[i] == target){
             return i;
-            break;
         }
     }
     return -1;

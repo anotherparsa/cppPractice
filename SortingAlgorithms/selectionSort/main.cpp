@@ -22,10 +22,10 @@ void selectionSort(int arr[], int size){
         for (int j = i + 1 ; j < size ; j++){
             if (arr[j] < arr[minIndex]){
                 minIndex = j;
-                if (i != minIndex){
-                    swapping(arr, i, minIndex);
-                }
             }
+        }
+        if (i != minIndex){
+            swapping(arr, i, minIndex);
         }
     }
 }

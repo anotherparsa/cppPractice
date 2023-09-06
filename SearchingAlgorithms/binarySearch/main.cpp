@@ -10,8 +10,6 @@ int main(){
     cout << binarySearch(54, size, array) << endl;
     cout << binarySearch(456, size, array) << endl;
     cout << binarySearch(4566, size, array) << endl;
-
-
 }
 
 
@@ -29,7 +27,6 @@ int binarySearch(int target, int size, int array[]){
         }
     }
     return -1;
-
 }
 
 
