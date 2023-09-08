@@ -7,19 +7,19 @@ void swapping(int arr[], int a, int b);
 void showArray(int arr[], int size);
 
 int main(){
-    int arr[] = {3, 6, 2, 7, 23, 634, 6534, 233};
+    int arr[] = {9, 7, 1, 3, 2, 5, 4, 6, 8};
     int size = sizeof(arr) / sizeof(int);
-    cout << "before sorting" << endl;
+    cout << "before selection sorting: " << endl;
     showArray(arr, size);
     selectionSort(arr, size);
-    cout << "after sorting" << endl;
+    cout << "after selection sorting: " << endl;
     showArray(arr, size);
 }
 
 void selectionSort(int arr[], int size){
-    for (int i = 0 ; i < size - 1 ; i++){
+    for (int i = 0; i < size - 1; i++){
         int minIndex = i;
-        for (int j = i + 1 ; j < size ; j++){
+        for (int j = i + 1; j < size; j++){
             if (arr[j] < arr[minIndex]){
                 minIndex = j;
             }
@@ -37,8 +37,8 @@ void swapping(int arr[], int a, int b){
 }
 
 void showArray(int arr[], int size){
-    for (int i = 0 ; i < size  ; i++){
-        cout << arr[i] << " " ;
+    for (int i = 0; i < size; i++){
+        cout << arr[i] << " ";
     }
     cout << endl;
 }
